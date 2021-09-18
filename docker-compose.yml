@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  frontend:
+    container_name: langdex-frontend
+    image: dev-langdex-frontend
+    build:
+      context: .
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    networks:
+      - langdex
+    restart: always
+    healthcheck:
+      test: ['CMD', '/usr/bin/wget', '--tries=1', '--spider', 'localhost:3000']
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+networks:
+  langdex:
