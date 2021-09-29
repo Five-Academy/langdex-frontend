@@ -2,7 +2,7 @@ version: '3.9'
 services:
   frontend:
     container_name: langdex-frontend
-    image: dev-langdex-frontend
+    image: langdex-frontend
     build:
       context: .
     ports:
@@ -10,7 +10,7 @@ services:
     env_file:
       - .env
     volumes:
-      - .:/app
+      - ./src:/app/src
     networks:
       - langdex
     restart: always
