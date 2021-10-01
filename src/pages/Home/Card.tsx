@@ -15,7 +15,9 @@ const Card = ({ content, number }: Props): JSX.Element => (
     />
     <div className="div">
       <h2 className="number">#001</h2>
-      <p className="text">Java Script</p>
+      <div className="text-container">
+        <p className="text">Java Script blablabla</p>
+      </div>
     </div>
   </div>
 );

@@ -12,18 +12,18 @@
 }
 
 .text {
-  width: 150px;
-  height: 30px;
-  background-image: $gradient-black;
   color: $white;
-  padding: 0 10px;
-  border-radius: 30px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 21.5px;
-  margin-top: 10px;
   word-wrap: break-word;
+}
+
+.text-container {
+  background: linear-gradient(
+    90deg, #495057, #343a40);
+  border-radius: 8px;
 }
 
 .number {
