@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+@import '../../styles/helpers.scss';
+
+.languagesWrapper {
+  @include flexDisplay;
+  flex-wrap: wrap;
+  margin: 70px;
+  margin-top: $lg-px;
+}

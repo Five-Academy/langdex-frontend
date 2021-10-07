@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+@import '../../styles/helpers.scss';
+
+.cardLanguage {
+  @include flexDisplay;
+  width: 400px;
+  height: 240px;
+  margin: $lg-px;
+  padding: $md-px;
+  background-color: $white;
+  border-radius: $lg-px;
+
+  &:hover {
+    box-shadow: 4px 4px 12px black;
+    transition: 500ms;
+    transition-timing-function: ease-in;
+  }
+}
+
+.cardContentWrapper {
+  @include flexDisplay;
+  flex-direction: column;
+  margin: $sm-px;
+}
+
+.cardLanguageImg {
+  width: 200px;
+  height: 200px;
+  border-radius: $sm-px $lg-px $sm-px;
+  object-fit: cover;
+}
+
+.cardLanguageNumber {
+  font-size: $lg-px;
+  font-weight: 500;
+}
+
+.languageNameWrapper {
+  background: linear-gradient(90deg, #495057, #343a40);
+  border-radius: $sm-px;
+}
+
+.cardLanguageName {
+  margin: 0 8px;
+  color: $white;
+  font-weight: $fw-mid;
+  font-size: $md-px;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}

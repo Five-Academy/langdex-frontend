@@ -2,9 +2,9 @@ FROM node:14-alpine
 ENV PORT=3000
 WORKDIR /app
 EXPOSE 3000
-COPY *.json ./
-RUN npm update
-CMD [ "npm", "run", "start" ]
+COPY . ./
+RUN yarn
+CMD [ "yarn", "run", "start" ]
 
 HEALTHCHECK --interval=15s \
   --timeout=10s \

@@ -1,0 +1,20 @@
+$black: #343a40;
+$green: #57cc99;
+$grey: #495057;
+$red: #ff0054;
+$pink-red: #9e0059;
+$teal: #38a3a5;
+$white: #f2f2f2;
+
+$fw-mid: 400;
+
+$sm-px: 12px;
+$md-px: 24px;
+$lg-px: 32px;
+$xl-px: 40px;
+$xl2-px: 96px;
+
+$gradient-black: linear-gradient(90deg, $grey, $black);
+$gradient-green: linear-gradient(90deg, $green, $teal);
+$gradient-red: linear-gradient(90deg, $red, $pink-red);
+$gradient-red-blue: linear-gradient(90deg, $teal, $pink-red);
