@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+@import '../../styles/helpers.scss';
+@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+
+.mainText {
+  color: $white;
+  padding: $sm-px;
+  font-weight: $fw-mid;
+  font-size: $xl2-px;
+  font-family: 'Mina', sans-serif;
+  text-align: center;
+  line-height: 150px;
+}
+
+.searchInput {
+  box-sizing: content-box;
+  width: 480px;
+  height: 48px;
+  padding-left: $md-px;
+  font-weight: 600;
+  color: $grey;
+  border: 3px double transparent;
+  border-radius: $sm-px;
+  border-width: 4px;
+  border-style: solid;
+  border-image: $gradient-red-blue;
+  border-image-slice: 1;
+}

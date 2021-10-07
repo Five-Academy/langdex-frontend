@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
-import './styles.scss';
+import './CardsSection.scss';
 
 const CardsSection = (): JSX.Element => {
   const [lang, setLang] = useState([]);
@@ -15,9 +15,9 @@ const CardsSection = (): JSX.Element => {
   }, []);
 
   return (
-    <section className="sections">
-      {lang.map((value, index): JSX.Element => {
-        return <Card content={value} number={index} />;
+    <section className="languagesWrapper">
+      {lang.map((value): JSX.Element => {
+        return <Card content={value} />;
       })}
     </section>
   );

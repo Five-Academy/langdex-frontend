@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import './SearchBox.scss';
 
 type Props = {
   title: string;
@@ -7,10 +7,13 @@ type Props = {
 };
 
 const SearchBox = ({ title, children }: Props): JSX.Element => (
-  <section className="searchbox">
-    <h3 className="searchboxtext">{title}</h3>
-    {children}
-  </section>
+  <>
+    <section className="searchBoxWrapper">
+      <h3 className="searchBoxText">{title}</h3>
+      {children}
+    </section>
+    <hr className="searchBoxLine" />
+  </>
 );
 
 export default SearchBox;

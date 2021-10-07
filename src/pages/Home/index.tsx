@@ -1,14 +1,14 @@
 import React from 'react';
 import CardsSection from './CardsSection';
 import SearchBox from './SearchBox';
-import './styles.scss';
+import './index.scss';
 
 const Home: React.FC = () => {
   return (
     <>
-      <h1 className="maintext">Langdex</h1>
+      <h1 className="mainText">Langdex</h1>
       <SearchBox title="Pesquisar por nome">
-        <input className="input" type="text" />
+        <input className="searchInput" type="text" />
       </SearchBox>
       <CardsSection />
     </>

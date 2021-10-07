@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+@import '../../styles/helpers.scss';
+
+.searchBoxWrapper {
+  @include flexDisplay;
+  flex-direction: column;
+}
+
+.searchBoxText {
+  position: relative;
+  margin-bottom: $sm-px;
+  color: $white;
+  font-weight: $fw-mid;
+  font-size: $md-px + 4;
+}
+
+.searchBoxLine {
+  width: 85vw;
+  margin: auto;
+  margin-top: 40px;
+  color: $white;
+}
