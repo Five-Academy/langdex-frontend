@@ -6,8 +6,7 @@ const CardsSection = (): JSX.Element => {
   const [lang, setLang] = useState([]);
 
   useEffect(() => {
-    fetch('https://cataas.com/api/cats')
-      // eslint-disable-next-line no-console
+    fetch('https://limitless-falls-01778.herokuapp.com/language')
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
         setLang(data);
@@ -16,8 +15,8 @@ const CardsSection = (): JSX.Element => {
 
   return (
     <section className="languagesWrapper">
-      {lang.map((value): JSX.Element => {
-        return <Card content={value} />;
+      {lang.map((value, index): JSX.Element => {
+        return <Card content={value} index={index} />;
       })}
     </section>
   );

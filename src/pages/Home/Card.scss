@@ -3,6 +3,7 @@
 
 .cardLanguage {
   @include flexDisplay;
+  justify-content: space-between;
   width: 400px;
   height: 240px;
   margin: $lg-px;
@@ -27,7 +28,7 @@
   width: 200px;
   height: 200px;
   border-radius: $sm-px $lg-px $sm-px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .cardLanguageNumber {
