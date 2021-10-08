@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+//
+// ------------------------ INICIO DAS HELPERS CLASSES -------------------------------
+//
+.bg-green {
+  background: $gradient-green;
+  color: $white;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+.bg-red {
+  background: $gradient-red;
+  color: $white;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  height: 100vh;
+  margin-top: 4.5rem;
+
+  @media only screen and (min-width: $screen-md) {
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 0;
+  }
+}
+//
+// ------------------------ FIM DAS HELPERS CLASSES -------------------------------
+//

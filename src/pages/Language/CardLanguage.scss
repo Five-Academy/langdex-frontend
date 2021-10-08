@@ -1,0 +1,134 @@
+@import './index.scss';
+
+.language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+  border-radius: $lg-px $lg-px 0px 0px;
+  background: $white;
+
+  &__image {
+    position: relative;
+
+    background: $white;
+    margin-bottom: -40px;
+    border-radius: $lg-px;
+
+    @media only screen and (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__name {
+    margin: 30px 0;
+    background: $gradient-black;
+    padding: 7px 60px;
+    border-radius: $lg-px;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 70%;
+  }
+  .description {
+    &__header {
+      text-transform: capitalize;
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 0.55rem;
+      color: $black;
+    }
+    &__line {
+      width: 90%;
+      color: $black;
+      margin-bottom: 0.55rem;
+    }
+    &__text {
+      text-align: center;
+      font-size: 14px;
+      color: $black;
+
+      @media only screen and (min-width: $screen-md) {
+        font-size: 18px;
+      }
+    }
+  }
+  &__board {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 1.6rem;
+    border: 1px solid $grey;
+    border-radius: $lg-px;
+    padding: 20px;
+    text-align: center;
+  }
+  &__paradigm,
+  &__type {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 13px;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: $grey;
+  }
+  .paradigm {
+    &__name {
+      width: 56%;
+
+      font-weight: 300;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__value {
+      width: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-transform: uppercase;
+    }
+    @media only screen and (min-width: $screen-md) {
+      font-size: 16px;
+    }
+  }
+  .type {
+    &__name {
+      width: 56%;
+
+      font-weight: 300;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__value {
+      width: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-transform: uppercase;
+    }
+    @media only screen and (min-width: $screen-md) {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: $screen-md) {
+    min-height: 500px;
+    border-radius: $lg-px;
+  }
+}
